@@ -1,0 +1,84 @@
+CHANGE LOG
+
+2017-??-?? - Version 3.0.0
+--------------------------------------------
+Added support for webhooks
+Switched to use \Curl\Curl for all Curl requests
+Updated examples to use recent dates
+Cleaned up and improved some unit tests
+Converted some errant tabs to spaces
+Removed BETA notice from README
+
+2016-06-08 - Version 2.5.1
+--------------------------------------------
+Uses the Akamai endpoint by default
+
+2015-09-11 - Version 2.5.0
+--------------------------------------------
+Exceptions extend AuthnetJson exception to allow for better error handling in client code
+Added AuthnetJsonResponse::getRawRequest to get raw JSON request sent to Authorize.Net
+Added AuthnetJsonResponse::getRawResponse to get raw JSON response returned from Authorize.Net
+Added getError(), getErrorCode(), and getErrorMessage() for easier error handling and logging
+Added support for the SIM API
+
+2015-08-26 - Version 2.4.5
+--------------------------------------------
+Added examples for PayPal Express
+
+2015-08-25 - Version 2.4.4
+--------------------------------------------
+Added examples for Verified by Visa
+
+2015-08-21 - Version 2.4.3
+--------------------------------------------
+Updated docbloc comments and added phpdoc.xml to allow for better and easier to generate documentation
+
+2015-08-16 - Version 2.4.2
+--------------------------------------------
+Completed unit test for UpdateSplitTenderGroup API call
+
+2015-08-09 - Version 2.4.1
+--------------------------------------------
+Fixed potential bug in AuthnetJsonResponse::Fixed potential bug in checkTransactionStatus()
+Got unit test coverage back to 100%
+
+2015-08-09 - Version 2.4.0
+--------------------------------------------
+Added support for the new Akamai endpoint
+
+2015-07-15 - Version 2.3.0
+--------------------------------------------
+Updated AuthnetJsonResponse::isApproved and AuthnetJsonResponse::isDeclined to work with AIM transactions
+Got unit test coverage to 100%
+
+2015-05-29 - Version 2.2.0
+--------------------------------------------
+Added AuthnetJsonResponse::isApproved and AuthnetJsonResponse::isDeclined to easily get status of CIM transactions
+
+2015-05-09 - Version 2.1.1
+--------------------------------------------
+Fixed fatal error caused by removing __set() parameters
+
+2015-05-06 - Version 2.1.0
+--------------------------------------------
+Transaction data returned in some CIM API calls can now be accessed easily
+
+2015-04-29 - Version 2.0.0
+--------------------------------------------
+Requests now return response objects
+
+2015-04-18 - Version 1.0.2
+--------------------------------------------
+Fixed bug where AuthnetInvalidJsonException would not be thrown when invalid JSON was returned
+
+2015-03-30 - Version 1.0.1
+--------------------------------------------
+Fixed bug where setting the third parameter AuthnetApiFactory::getJsonApiHandler to NULL would default to production server
+Throws AuthnetInvalidJsonException if response JSON is not valid
+Finished adding examples
+Added more unit tests
+Added more docbloc comments
+
+2015-03-21 - Version 1.0.0
+--------------------------------------------
+Initial Release

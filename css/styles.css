@@ -1,0 +1,68 @@
+/*
+ * wpdauth_admin_styles
+ *
+ * @package WPD Authorize.net
+ * @author wpplugindesign.com
+ * @since 0.5
+ */
+
+.captamount {
+	max-width: 75px;
+	margin-right: 3px;
+}
+input[type=number].captamount::-webkit-inner-spin-button, 
+input[type=number].captamount::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}
+#TB_window {
+	margin-left: -165px !important;
+}
+#TB_ajaxContent {
+	text-align: center !important;
+}
+.captmod_cont {
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 1.3;
+}
+.captmod .button.cancel {
+	margin-right: 5px;
+}
+.processing_spinner {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #577aa4;
+	border-radius: 100%;  
+	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+	animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@-webkit-keyframes sk-scaleout {
+	0% { -webkit-transform: scale(0) }
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+@keyframes sk-scaleout {
+	0% { 
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 100% {
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+		opacity: 0;
+	}
+}
+select[name="wc_order_action"] option[value="wpd_void_auth"],
+select[name="wc_order_action"] option[value="wpd_void_capt"] {
+	display: none;
+}
+#payment_capture_time {
+	width: 12%;
+}
+#wpd-authnet-transactions #the-list td {
+	font-size: 12px !important;
+}
